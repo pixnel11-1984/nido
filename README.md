@@ -5,7 +5,7 @@ The review build is on the [`homepage-preview` branch](https://github.com/pixnel
 ## Preview in your browser with GitHub Codespaces
 
 1. Open the `homepage-preview` branch on GitHub.
-2. Select **Code → Codespaces → Create codespace on homepage-preview**. The included dev container installs Node.js 24, runs `npm ci`, and is configured to start the website.
+2. Select **Code → Codespaces → Create codespace on homepage-preview**. The included dev container installs Node.js 22, runs `npm ci`, and is configured to start the website.
 3. Open the forwarded **3000** port in the **Ports** tab. GitHub opens the live site in your browser. Keep the port's visibility set to **Private**; do not change it to Public.
 
 The site updates as you edit files in the codespace. The private port requires GitHub access to the codespace. The website is available while the codespace is running; you can resume it for the next review. Codespaces availability depends on your GitHub account and usage allowance.
@@ -23,7 +23,7 @@ If the terminal says **`npm: command not found`**, the codespace is not using th
 
 ## Preview on your computer
 
-Install [Node.js 24](https://nodejs.org/) and Git, then run:
+Install [Node.js 22 or newer](https://nodejs.org/) and Git, then run:
 
 ```sh
 git clone --branch homepage-preview https://github.com/pixnel11-1984/nido.git
