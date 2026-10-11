@@ -45,14 +45,13 @@ h1 em, h2 em { font-weight: 400; }
 .header-cta span[aria-hidden], .button span[aria-hidden], .text-link span[aria-hidden] { display: inline-block; position: relative; flex: 0 0 12px; width: 12px; height: 12px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; font-size: 0; line-height: 0; }
 .header-cta span[aria-hidden]::after, .button span[aria-hidden]::after, .text-link span[aria-hidden]::after { content: ""; position: absolute; top: 4px; right: -1px; width: 14px; height: 1.5px; background: currentColor; transform: rotate(-45deg); transform-origin: right center; }
 
-.mobile-menu, .mobile-hero-title { display: none; }
+.mobile-menu, .mobile-birthday-title { display: none; }
 
 .bento { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(330px, 1fr); grid-template-rows: repeat(2, minmax(280px, 304px)); gap: 15px; }
 .bento article { position: relative; overflow: hidden; border-radius: 26px; }
-.bento-main { grid-row: span 2; background: var(--sage); padding: clamp(32px, 4vw, 62px); display: flex; align-items: center; }
-.hero-copy { width: 100%; max-width: 650px; }
-.hero-copy h1 { font-size: clamp(56px, 5vw, 78px); line-height: .91; letter-spacing: -.04em; margin-bottom: 0; }
-.hero-copy h1 em { white-space: normal; }
+.bento-main { background: var(--sage); padding: 32px; display: flex; align-items: end; }
+.hero-copy { width: 100%; }
+.hero-copy h2 { font-size: clamp(43px, 3.2vw, 56px); line-height: .92; letter-spacing: -.04em; margin-bottom: 0; }
 .bento-menu { background: #eee5d6; padding: 27px 30px 30px; display: flex; flex-direction: column; justify-content: space-between; }
 .menu-ornament { position: absolute; width: 200px; height: 200px; right: 8%; top: 16%; border: 1px solid #a77a5070; border-radius: 50% 50% 12px 12px; display: grid; place-items: center; transform: rotate(9deg); opacity: .6; }
 .menu-ornament::before { content: ""; position: absolute; inset: 17px; border: 1px solid #a77a5070; border-radius: inherit; }
@@ -61,14 +60,14 @@ h1 em, h2 em { font-weight: 400; }
 .card-bottom h2 { margin-bottom: 0; font-size: clamp(40px, 3.6vw, 56px); line-height: .95; }
 .card-bottom .button { padding-inline: 17px; }
 
-.bento-birthday { background: var(--blush); padding: 32px; display: flex; align-items: end; }
-.birthday-content { position: relative; z-index: 1; max-width: 320px; }
-.birthday-content h2 { font-size: clamp(39px, 3.35vw, 54px); line-height: .94; margin-bottom: 17px; }
-.birthday-content h2 em { display: block; }
-.birthday-mark { position: absolute; right: 6%; top: -34px; width: 190px; height: 200px; transform: rotate(12deg); opacity: .66; }
-.birthday-mark span { position: absolute; border-radius: 50% 50% 20px 20px; border: 2px solid #8d5561; width: 100px; height: 160px; }
-.birthday-mark span:nth-child(2) { left: 35px; top: 23px; border-color: #fff5ee; }
-.birthday-mark span:nth-child(3) { left: 70px; top: 45px; border-color: #8d5561; }
+.bento-birthday { grid-row: span 2; background: var(--blush); padding: clamp(32px, 4vw, 62px); display: flex; align-items: center; }
+.birthday-content { position: relative; z-index: 1; max-width: 690px; }
+.birthday-content h1 { font-size: clamp(60px, 5.2vw, 88px); line-height: .92; letter-spacing: -.04em; margin-bottom: 30px; }
+.birthday-content h1 em, .birthday-content h2 em { display: block; }
+.birthday-mark { position: absolute; right: 8%; top: 6%; width: 310px; height: 330px; transform: rotate(12deg); opacity: .42; }
+.birthday-mark span { position: absolute; border-radius: 50% 50% 20px 20px; border: 2px solid #8d5561; width: 160px; height: 260px; }
+.birthday-mark span:nth-child(2) { left: 55px; top: 35px; border-color: #fff5ee; }
+.birthday-mark span:nth-child(3) { left: 110px; top: 70px; border-color: #8d5561; }
 .text-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; border-bottom: 1px solid currentColor; font-size: 13px; font-weight: 600; }
 .text-link:hover { gap: 18px; }
 
@@ -96,7 +95,7 @@ h1 em, h2 em { font-weight: 400; }
   .desktop-nav { gap: 18px; font-size: 12px; }
   .brand span { font-size: 26px; }
   .bento { grid-template-columns: minmax(0, 1.4fr) minmax(300px, 1fr); }
-  .hero-copy h1 { font-size: clamp(55px, 6vw, 80px); }
+  .birthday-content h1 { font-size: clamp(56px, 6vw, 74px); }
   .card-bottom { display: block; }
   .card-bottom .button { margin-top: 12px; }
 }
@@ -127,12 +126,15 @@ h1 em, h2 em { font-weight: 400; }
   .card-bottom { display: flex; align-items: end; }
   .card-bottom h2 { font-size: 49px; }
   .card-bottom .button { margin: 0; }
-  .bento-birthday { order: 1; min-height: 231px; padding: 23px; }
-  .birthday-content h2 { font-size: 43px; max-width: 270px; }
-  .birthday-mark { right: -2%; opacity: .36; }
-  .bento-main { order: 2; min-height: 310px; padding: 36px 26px; }
-  .hero-copy h1 { display: none; }
-  .mobile-hero-title { display: block; font-size: clamp(59px, 11vw, 86px); line-height: .91; letter-spacing: -.04em; margin-bottom: 0; }
+  .bento-birthday { order: 1; min-height: 231px; padding: 23px; align-items: end; }
+  .desktop-birthday-title { display: none; }
+  .mobile-birthday-title { display: block; font-size: 43px; line-height: .94; margin-bottom: 14px; max-width: 270px; }
+  .birthday-mark { right: -2%; top: -34px; width: 190px; height: 200px; opacity: .36; }
+  .birthday-mark span { width: 100px; height: 160px; }
+  .birthday-mark span:nth-child(2) { left: 35px; top: 23px; }
+  .birthday-mark span:nth-child(3) { left: 70px; top: 45px; }
+  .bento-main { order: 2; min-height: 310px; padding: 36px 26px; align-items: center; }
+  .hero-copy h2 { font-size: clamp(59px, 11vw, 86px); line-height: .91; }
   .lower-grid { grid-template-columns: 1fr; gap: 12px; margin-block: 12px 70px; }
   .lower-card { min-height: 220px; padding: 27px; }
   .lower-card h2 { font-size: 55px; }
@@ -148,7 +150,7 @@ h1 em, h2 em { font-weight: 400; }
   .mobile-menu { min-height: 350px; padding: 23px; }
   .mobile-menu-body h1 { font-size: 68px; }
   .bento-birthday { min-height: 236px; }
-  .mobile-hero-title { font-size: 58px; }
+  .hero-copy h2 { font-size: 58px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

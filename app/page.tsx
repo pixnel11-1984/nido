@@ -11,10 +11,12 @@ export default function HomePage() {
       </section>
 
       <section className="shell bento" aria-label="Nido Café: café y celebraciones">
-        <article className="bento-main">
-          <div className="hero-copy">
-            <h1 id="home-title">Un café para ti,<br /><em>diversión para ellos.</em></h1>
-            <h2 className="mobile-hero-title">Un café para ti,<br /><em>diversión para ellos.</em></h2>
+        <article className="bento-birthday">
+          <div className="birthday-mark" aria-hidden="true"><span /><span /><span /></div>
+          <div className="birthday-content">
+            <h1 className="desktop-birthday-title">Celebra su cumpleaños <em>en Nido Café</em></h1>
+            <h2 className="mobile-birthday-title">Celebra su cumpleaños <em>en Nido Café</em></h2>
+            <Link className="button button-dark" href="/cumpleanos">Ver cumpleaños <span aria-hidden="true">↗</span></Link>
           </div>
         </article>
 
@@ -26,11 +28,9 @@ export default function HomePage() {
           </div>
         </article>
 
-        <article className="bento-birthday">
-          <div className="birthday-mark" aria-hidden="true"><span /><span /><span /></div>
-          <div className="birthday-content">
-            <h2>Celebra su cumpleaños <em>en Nido Café</em></h2>
-            <Link className="text-link" href="/cumpleanos">Ver cumpleaños <span aria-hidden="true">↗</span></Link>
+        <article className="bento-main">
+          <div className="hero-copy">
+            <h2>Un café para ti,<br /><em>diversión para ellos.</em></h2>
           </div>
         </article>
       </section>
