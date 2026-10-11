@@ -19,7 +19,7 @@ curl -I http://127.0.0.1:3000/
 
 The branch should be `homepage-preview`, and the `curl` response should start with `HTTP/1.1 200`. If `curl` cannot connect, run `npm run dev -- --port 3000` and leave that terminal open. If dependencies are missing, run `npm ci` first. Then open port **3000** again from the **Ports** tab. If the local response is 200 but the browser still shows 404, check that the port is **Private** and that you are signed into the same GitHub account that owns the codespace.
 
-If the terminal says **`npm: command not found`**, the codespace is not using the Node.js dev container from this branch. Run `git pull --ff-only origin homepage-preview`, then open the Command Palette and select **Codespaces: Rebuild Container** (or **Dev Containers: Rebuild Container**, if that is the available command). After it reopens, check `npm --version`. If the rebuild is unavailable or fails, create a new codespace from the `homepage-preview` branch so it picks up `.devcontainer/devcontainer.json` at creation time.
+If the terminal says **`npm: command not found`**, run `bash scripts/start-preview.sh` instead. This Linux Codespaces helper installs Node.js 22 into your home directory when needed, verifies its SHA-256 checksum, installs the project's dependencies, and starts the site on port 3000. Leave the terminal open, then open port **3000** from the **Ports** tab.
 
 ## Preview on your computer
 
