@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -16,11 +15,6 @@ export default function HomePage() {
           <div className="hero-copy">
             <h1 id="home-title">Un café para ti,<br /><em>diversión para ellos.</em></h1>
             <h2 className="mobile-hero-title">Un café para ti,<br /><em>diversión para ellos.</em></h2>
-          </div>
-          <div className="hero-art" aria-hidden="true">
-            <div className="hero-art-frame">
-              <Image src="/Nido-logo-01.jpg" alt="" fill sizes="(max-width: 800px) 60vw, 28vw" priority className="hero-logo" />
-            </div>
           </div>
         </article>
 

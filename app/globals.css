@@ -50,12 +50,9 @@ h1 em, h2 em { font-weight: 400; }
 .bento { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(330px, 1fr); grid-template-rows: repeat(2, minmax(280px, 304px)); gap: 15px; }
 .bento article { position: relative; overflow: hidden; border-radius: 26px; }
 .bento-main { grid-row: span 2; background: var(--sage); padding: clamp(32px, 4vw, 62px); display: flex; align-items: center; }
-.hero-copy { position: relative; z-index: 2; width: 65%; align-self: center; }
+.hero-copy { width: 100%; max-width: 650px; }
 .hero-copy h1 { font-size: clamp(56px, 5vw, 78px); line-height: .91; letter-spacing: -.04em; margin-bottom: 0; }
 .hero-copy h1 em { white-space: normal; }
-.hero-art { position: absolute; right: -4%; top: 10%; height: 83%; width: 48%; transform: rotate(6deg); }
-.hero-art-frame { width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 49% 49% 28px 28px; box-shadow: 0 22px 50px #5c654b22; background: #e4ead9; }
-.hero-logo { object-fit: cover; object-position: center; transform: scale(1.15); }
 .bento-menu { background: #eee5d6; padding: 27px 30px 30px; display: flex; flex-direction: column; justify-content: space-between; }
 .menu-ornament { position: absolute; width: 200px; height: 200px; right: 8%; top: 16%; border: 1px solid #a77a5070; border-radius: 50% 50% 12px 12px; display: grid; place-items: center; transform: rotate(9deg); opacity: .6; }
 .menu-ornament::before { content: ""; position: absolute; inset: 17px; border: 1px solid #a77a5070; border-radius: inherit; }
@@ -99,9 +96,7 @@ h1 em, h2 em { font-weight: 400; }
   .desktop-nav { gap: 18px; font-size: 12px; }
   .brand span { font-size: 26px; }
   .bento { grid-template-columns: minmax(0, 1.4fr) minmax(300px, 1fr); }
-  .hero-copy { width: 75%; }
   .hero-copy h1 { font-size: clamp(55px, 6vw, 80px); }
-  .hero-art { opacity: .56; }
   .card-bottom { display: block; }
   .card-bottom .button { margin-top: 12px; }
 }
@@ -135,11 +130,9 @@ h1 em, h2 em { font-weight: 400; }
   .bento-birthday { order: 1; min-height: 231px; padding: 23px; }
   .birthday-content h2 { font-size: 43px; max-width: 270px; }
   .birthday-mark { right: -2%; opacity: .36; }
-  .bento-main { order: 2; min-height: 340px; padding: 36px 26px; }
-  .hero-copy { width: 85%; align-self: start; }
+  .bento-main { order: 2; min-height: 310px; padding: 36px 26px; }
   .hero-copy h1 { display: none; }
   .mobile-hero-title { display: block; font-size: clamp(59px, 11vw, 86px); line-height: .91; letter-spacing: -.04em; margin-bottom: 0; }
-  .hero-art { top: auto; bottom: -7%; right: -8%; height: 70%; width: 56%; opacity: .35; }
   .lower-grid { grid-template-columns: 1fr; gap: 12px; margin-block: 12px 70px; }
   .lower-card { min-height: 220px; padding: 27px; }
   .lower-card h2 { font-size: 55px; }
@@ -156,7 +149,6 @@ h1 em, h2 em { font-weight: 400; }
   .mobile-menu-body h1 { font-size: 68px; }
   .bento-birthday { min-height: 236px; }
   .mobile-hero-title { font-size: 58px; }
-  .hero-copy { width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
