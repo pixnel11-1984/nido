@@ -53,7 +53,6 @@ function Footer() {
       <div className="shell footer-inner">
         <div>
           <p className="footer-name">Nido Café</p>
-          <p>Un café para ti, diversión para ellos.</p>
         </div>
         <div className="footer-links">
           <Link href="/carta">Carta</Link>

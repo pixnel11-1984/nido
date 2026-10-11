@@ -9,10 +9,8 @@ export const metadata: Metadata = {
 export default function MenuPage() {
   return (
     <main id="contenido" className="shell detail-page">
-      <p className="eyebrow">Nido Café / Carta</p>
       <h1>Nuestra <em>carta.</em></h1>
-      <p className="detail-lead">Estamos preparando este espacio para que puedas conocer la carta de Nido Café.</p>
-      <div className="pending-card"><span className="eyebrow">Contenido por confirmar</span><p>Publicaremos productos, precios y detalles cuando estén verificados.</p></div>
+      <div className="pending-card"><p>Menú y precios por confirmar.</p></div>
       <Link className="button button-dark" href="/">Volver al inicio <span aria-hidden="true">↗</span></Link>
     </main>
   );
