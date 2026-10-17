@@ -1,0 +1,13 @@
+{
+  "name": "Nido Café website preview",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "postCreateCommand": "npm ci",
+  "postStartCommand": "bash .devcontainer/start-preview.sh",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Nido Café preview",
+      "onAutoForward": "notify"
+    }
+  }
+}
